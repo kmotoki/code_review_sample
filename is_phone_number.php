@@ -5,9 +5,9 @@
  * @param string $phone_number 電話番号
  * @return bool 引数 $phone_number が電話番号ならば true。
  */
-function is_phone_number (string $phone_number): bool
+function is_phone_number(string $phone_number): bool
 {
-	$phone_number = str_replace('-', '', phone_number);
+	$phone_number = str_replace('-', '', $phone_number);
 
 	$length = strlen($phone_number);
 	if ($length < 10 || $length > 11) {
